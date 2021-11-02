@@ -67,8 +67,21 @@
   </div>
 </div>
 
-<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Results on Category-Level 3D Pose Estimation</h3>
+<div class="container" id="teaser">
+  <div class="col text-center"  style="padding-top: 0%">
+    <img src="./results/0.8581_modelnet40aligned_chair.gif" width="95%"></img>
+  </div>
+</div>
+
+<!--Abstract-->
+<div class="container" id="abstract">
+  <h2>Abstract</h2>
+Category-level object pose estimation aims to find 6D object poses of <b> previously unseen object instances from known categories </b>  without access to object CAD models.  To reduce the huge amount of pose annotations needed for category-level learning, we propose for the first time a self-supervised learning framework to estimate category-level 6D object pose from single 3D point clouds.  During training, our method assumes <b> no ground-truth pose annotations</b>, <b> no CAD models</b>, and <b> no multi-view supervision</b>. The key to our method is to disentangle shape and pose through an invariant shape reconstruction module and an equivariant pose estimation module, empowered by SE(3) equivariant point cloud networks. The invariant shape reconstruction module learns to perform aligned reconstructions, yielding a category-level reference frame without using any annotations. In addition,the equivariant pose estimation module achieves category-level pose estimation accuracy that is comparable to some fully supervised methods. Extensive experiments demonstrate the effectiveness of our approach on both complete and partialdepth point clouds from the ModelNet40 benchmark, and on real depth point cloudsfrom the NOCS-REAL 275 dataset.
+</div>
+
+
 <div class="container" id="example">
+<h2>Results on Category-Level 3D Pose Estimation(Completa Input)</h2>
   <div class="col text-center"  style="padding-top: 0%">
     <img src="./results/0.813_modelnet40aligned_airplane.gif" width="95%"></img>
   </div>
@@ -98,8 +111,8 @@
   </div>
 </div>
 
-<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Results on Category-Level 6D Pose Estimation(Partial Input)</h3>
 <div class="container" id="example">
+<h2>Results on Category-Level 6D Pose Estimation(Partial Input)</h2>
   <div class="col text-center"  style="padding-top: 0%">
     <img src="./results/0.913r_modelnet40new_airplane.gif" width="95%"></img>
   </div>
@@ -111,13 +124,14 @@
   </div>
 </div>
 
-<h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Results on Category-Level Canonical Shape Reconstructions</h3>
-<p style="text-align:center;font-size:0.8em">
-  From complete inputs
-  &emsp;  &emsp;  &emsp;  &emsp;  &emsp; &emsp; &emsp;
-  &nbsp;&nbsp;&nbsp;&nbsp From partial inputs
-</p>
+
 <div class="container" id="teaser">
+  <h2>Results on Category-Level Canonical Shape Reconstructions</h2>
+  <p style="text-align:center;font-size:0.8em">
+    From complete inputs
+    &emsp;  &emsp;  &emsp;  &emsp;  &emsp; &emsp; &emsp;
+    &nbsp;&nbsp;&nbsp;&nbsp From partial inputs
+  </p>
   <div class="col text-center"  style="padding-top: 0%">
     <img alt='xxxx' title='Reconstruct from Complete Inputs' src="./results/complete_shapes.svg" width="49%"></img>
     <img alt='xxxx' title='Reconstruct from Partial Inputs' src="./results/partial_reconstruction.svg" width="49%"></img>
@@ -163,12 +177,6 @@
     <span class="dot" onclick="currentSlide(7)"></span>
   </div>
 </div> -->
-
-<!--Abstract-->
-<div class="container" id="abstract">
-  <h2>Abstract</h2>
-Category-level object pose estimation aims to find 6D object poses of previouslyunseen object instances from known categories without access to object CADmodels.  To reduce the huge amount of pose annotations needed for category-level learning, we propose for the first time a self-supervised learning frameworkto estimate category-level 6D object pose from single 3D point clouds.  Duringtraining, our method assumes no ground-truth pose annotations, no CAD models,and no multi-view supervision. The key to our method is to disentangle shape andpose through an invariant shape reconstruction module and an equivariant poseestimation module, empowered by SE(3) equivariant point cloud networks. Theinvariant shape reconstruction module learns to perform aligned reconstructions,yielding a category-level reference frame without using any annotations. In addition,the equivariant pose estimation module achieves category-level pose estimationaccuracy that is comparable to some fully supervised methods. Extensive experi-ments demonstrate the effectiveness of our approach on both complete and partialdepth point clouds from the ModelNet40 benchmark, and on real depth point cloudsfrom the NOCS-REAL 275 dataset.
-</div>
 
 <!-- <h3>Video</h3>
 <iframe width="99%" height="618" src="https://www.youtube.com/embed/S8Amc6D8SKY?autoplay=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
@@ -226,7 +234,6 @@ Category-level object pose estimation aims to find 6D object poses of previously
   </div>
 </div>
 
-<!--Abstract-->
 <div class="container" id="acknowledgment">
   <h4>Acknowledgments</h4>
 This research is supported by a Vannevar Bush faculty fellowship, NSF grant
