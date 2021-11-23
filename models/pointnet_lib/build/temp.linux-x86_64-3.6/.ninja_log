@@ -1,0 +1,19 @@
+# ninja log v5
+6	5509	1616858251975070645	/home/lxiaol9/3DGenNet2019/haoi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/group_points.o	1a4c42c94daceef5
+6	5535	1616858251998194542	/home/lxiaol9/3DGenNet2019/haoi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/sampling.o	d93acd5ab3546d59
+6	5539	1616858251991343056	/home/lxiaol9/3DGenNet2019/haoi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/interpolate.o	6a23449cccf6aa0e
+5	6104	1616858252576288355	/home/lxiaol9/3DGenNet2019/haoi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/ball_query.o	52d6ae9b25b96db3
+6	13602	1616858260079831293	/home/lxiaol9/3DGenNet2019/haoi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/ball_query_gpu.o	6ad7056275609acc
+6	13639	1616858260117086179	/home/lxiaol9/3DGenNet2019/haoi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/group_points_gpu.o	babb8fa23a744997
+6	13691	1616858260149422346	/home/lxiaol9/3DGenNet2019/haoi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/interpolate_gpu.o	5948ae7e789a4cf6
+6	13751	1616858260227351540	/home/lxiaol9/3DGenNet2019/haoi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/sampling_gpu.o	a38f5bc807806f64
+5	17710	1616858264169033710	/home/lxiaol9/3DGenNet2019/haoi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/pointnet2_api.o	343cdacfe78ac6d2
+2	4733	1636128745	/home/lxiaol9/4DDynamics/equi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/group_points.o	fce52d17048c2127
+3	4760	1636128745	/home/lxiaol9/4DDynamics/equi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/sampling.o	c900781e5dcab592
+2	4799	1636128745	/home/lxiaol9/4DDynamics/equi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/interpolate.o	16442a34200bde4c
+2	5351	1636128746	/home/lxiaol9/4DDynamics/equi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/ball_query.o	93793e2074370ae3
+3	11283	1636128752	/home/lxiaol9/4DDynamics/equi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/interpolate_gpu.o	c7cabb549db602e4
+2	11477	1636128752	/home/lxiaol9/4DDynamics/equi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/ball_query_gpu.o	a41bf5c9790897a3
+2	11693	1636128752	/home/lxiaol9/4DDynamics/equi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/group_points_gpu.o	26e695f17478cf6b
+3	12092	1636128752	/home/lxiaol9/4DDynamics/equi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/sampling_gpu.o	41c2f93ad9405275
+2	16829	1636128757	/home/lxiaol9/4DDynamics/equi-pose/models/pointnet_lib/build/temp.linux-x86_64-3.6/src/pointnet2_api.o	349eccb7b3a7949a

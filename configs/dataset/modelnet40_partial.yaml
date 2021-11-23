@@ -1,0 +1,10 @@
+# @package _global_
+name_dset: modelnet40_partial
+augment: False
+DATASET:
+  dataset_path: '/groups/arcadm/xiaolong/modelnet40_partial/'
+  instance_ratio: 1.0
+  viewpoint_ratio: 1.0
+  add_noise: False
+  noise_trans: 0.04
+  workers: 8

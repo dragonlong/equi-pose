@@ -1,0 +1,31 @@
+# @package _global_
+# training
+task: 'ssl_pcloud_pose_completion'
+nr_epochs: 500
+lr: 0.0005       # initial learning rate
+lr_decay: 0.9995 # step size for learning rate decay
+
+# additional heads
+latent_dim: 128
+dec_features: (256, 256)
+nocs_features: [128, 128, 3, 'sigmoid']
+seg_features: [128, 128, 2, 'softmax']
+confi_features: [128, 1, 'sigmoid']
+mode_features: ['softmax']
+
+# pred objective
+pred_t: False
+pred_s: False
+
+# loss
+rotation_loss_type: 1
+use_objective_T: False
+use_objective_R: False
+use_objective_M: False
+use_confidence_R: False
+use_objective_canon: False
+confidence_loss_multiplier: 0.01
+consistency_loss_multiplier: 0.1
+use_symmetry_loss: False
+t_method_type: -1
+r_method_type: -1

@@ -1,0 +1,7 @@
+setup.py
+cuda/zpconv_cuda.cpp
+cuda/zpconv_cuda_kernel.cu
+so3_gconv.egg-info/PKG-INFO
+so3_gconv.egg-info/SOURCES.txt
+so3_gconv.egg-info/dependency_links.txt
+so3_gconv.egg-info/top_level.txt

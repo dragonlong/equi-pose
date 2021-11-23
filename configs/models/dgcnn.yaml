@@ -1,0 +1,57 @@
+MODEL:
+  num_layers: 6
+  num_in_channels: 1
+  num_mid_channels: 1
+  num_out_channels: 32
+  num_channels_R: 1 # or 1
+  edge_dim: 0
+  encoder_only: False
+  n_heads: 4  # in the "pre_modules"
+  vector_attention: False
+  # down_conv:
+  #     module_type: SE3TBlock
+  #     edge_dim: 0
+  #     div: 4
+  #     n_heads: 4
+  #     knn: True
+  #     num_degrees: 2
+  #     npoint: [256, 64, 32, 16]
+  #     radius: [[0.1], [0.2], [0.4], [0.8]]
+  #     nsamples: [[10], [16], [16], [15]]  #TOD16
+  #     vector_attention: False
+  #     down_conv_nn:
+  #         [
+  #             [
+  #                 [16, 16, 16], # 512 -> 256
+  #             ],
+  #             [
+  #                 [16, 32, 32], # 256 -> 128
+  #             ],
+  #             [
+  #                 [32, 64, 64], #
+  #             ],
+  #             [
+  #                 [64, 64, 64],
+  #             ],
+  #         ]
+  # up_conv:
+  #     module_type: GraphFPModule # may change into
+  #     edge_dim: 0
+  #     div: 4
+  #     n_heads: 4
+  #     knn: True
+  #     num_degrees: 2
+  #     vector_attention: False
+  #     up_conv_nn:
+  #         [
+  #             [64 + 64, 64],   #
+  #             [64 + 32, 32],
+  #             [32 + 16, 32],   # 128 -> 512
+  #             [32 + 16, 32],   # 512 -> 1024
+  #         ]
+  mlp_cls:
+      nn: [128]
+      dropout: 0.5
+
+HEAD:
+  M: [64, 2, 'softmax']

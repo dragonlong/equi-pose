@@ -1,0 +1,12 @@
+# @package _global_
+name_dset: modelnet40_complete
+augment: True
+DATASET:
+  batch_size: 2
+  instance_ratio: 1.0
+  viewpoints_ratio: 1.0
+  out_points: 1024
+  num_of_class: 10
+  dataset_path: '/groups/arcadm/xiaolong/modelnet40_complete/'
+  num_gen_samples: 30
+  workers: 8

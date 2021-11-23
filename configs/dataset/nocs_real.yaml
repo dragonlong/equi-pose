@@ -1,0 +1,8 @@
+# @package _global_
+name_dset: noce_newer
+DATASET:
+  out_points: 512
+  num_of_class: 10
+  data_path: '/groups/arcadm/xiaolong/nocs_real'
+  num_gen_samples: 30
+  workers: 8

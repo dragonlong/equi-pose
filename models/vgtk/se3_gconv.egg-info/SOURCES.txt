@@ -1,0 +1,11 @@
+setup.py
+cuda/gathering_cuda.cpp
+cuda/gathering_cuda_kernel.cu
+cuda/grouping_cuda.cpp
+cuda/grouping_cuda_kernel.cu
+cuda/zpconv_cuda.cpp
+cuda/zpconv_cuda_kernel.cu
+se3_gconv.egg-info/PKG-INFO
+se3_gconv.egg-info/SOURCES.txt
+se3_gconv.egg-info/dependency_links.txt
+se3_gconv.egg-info/top_level.txt

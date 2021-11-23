@@ -1,0 +1,27 @@
+ninja_required_version = 1.3
+cxx = g++
+nvcc = /opt/apps/cuda/11.0.1/bin/nvcc
+
+cflags = -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/lxiaol9/anaconda3/envs/ptrans36/lib/python3.6/site-packages/torch/include -I/home/lxiaol9/anaconda3/envs/ptrans36/lib/python3.6/site-packages/torch/include/torch/csrc/api/include -I/home/lxiaol9/anaconda3/envs/ptrans36/lib/python3.6/site-packages/torch/include/TH -I/home/lxiaol9/anaconda3/envs/ptrans36/lib/python3.6/site-packages/torch/include/THC -I/opt/apps/cuda/11.0.1/include -I/home/lxiaol9/anaconda3/envs/ptrans36/include/python3.6m -c
+post_cflags = -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=epn_grouping -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+cuda_cflags = -I/home/lxiaol9/anaconda3/envs/ptrans36/lib/python3.6/site-packages/torch/include -I/home/lxiaol9/anaconda3/envs/ptrans36/lib/python3.6/site-packages/torch/include/torch/csrc/api/include -I/home/lxiaol9/anaconda3/envs/ptrans36/lib/python3.6/site-packages/torch/include/TH -I/home/lxiaol9/anaconda3/envs/ptrans36/lib/python3.6/site-packages/torch/include/THC -I/opt/apps/cuda/11.0.1/include -I/home/lxiaol9/anaconda3/envs/ptrans36/include/python3.6m -c
+cuda_post_cflags = -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=epn_grouping -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_70,code=sm_70 -ccbin gcc -std=c++14
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+rule cuda_compile
+  command = $nvcc $cuda_cflags -c $in -o $out $cuda_post_cflags
+
+
+
+build /home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/grouping_cuda.o: compile /home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/cuda/grouping_cuda.cpp
+build /home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/grouping_cuda_kernel.o: cuda_compile /home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/cuda/grouping_cuda_kernel.cu
+
+
+
+
+

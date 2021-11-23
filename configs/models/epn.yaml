@@ -1,0 +1,36 @@
+# @package _global_
+model:
+  model: 'enc_so3net'
+  input_num: 1024
+  output_num: 32
+  search_radius: 0.4
+  normalize_input: False
+  dropout_rate: 0.
+  init_method: "xavier"
+  kpconv: False
+  kanchor: 60
+  normals: False # action='store_true', help='If set, add normals to the input')
+  flag: 'rotation'    # help='pooling method: max | mean | attention | rotation')
+  representation: 'quat' #ortho6d
+  pooling_method: 'max'
+
+MODEL:
+  num_in_channels: 1
+  num_mid_channels: 1
+  num_channels_R: 1
+
+train_lr:
+  init_lr: 1e-3
+  lr_type: 'exp_decay' # help='learning rate schedule type: exp_decay | constant')
+  decay_rate: 0.5   # help='the rate of exponential learning rate decaying')
+  decay_step: 10000 # help='the frequency of exponential learning rate decaying')
+
+train_loss:
+  loss_type: 'soft'
+  attention_loss_type: 'no_reg' # help='type of attention loss function')
+  margin: 1.0 # help='margin of hard batch loss')
+  temperature: 3
+  attention_margin: 1.0
+  attention_pretrain_step: 3000
+  equi_alpha: 0.0
+  eval: False

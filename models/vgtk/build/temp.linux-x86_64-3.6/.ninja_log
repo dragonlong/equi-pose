@@ -1,0 +1,19 @@
+# ninja log v5
+1	10244	1618628972293121993	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/gathering_cuda_kernel.o	57b5d676ecddbb1b
+2	10537	1618628972583799076	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/zpconv_cuda_kernel.o	d91e77455ff26041
+2	11857	1618628973902793341	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/grouping_cuda_kernel.o	48fb2918cbc8877d
+1	22721	1618628984724293841	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/gathering_cuda.o	87c73882abf0a9b1
+2	22862	1618628984896616080	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/zpconv_cuda.o	cbe93902f6c3dd62
+2	23175	1618628985213183371	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/grouping_cuda.o	ae16bb9812ada969
+80	7648	1618629666923033949	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/zpconv_cuda_kernel.o	ebe8c9f2de185aee
+80	16817	1618629676038630505	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/zpconv_cuda.o	a60c6dc09041dd28
+81	7755	1618630716080860650	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/zpconv_cuda_kernel.o	d91e77455ff26041
+81	16839	1618630725120132850	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/zpconv_cuda.o	cbe93902f6c3dd62
+80	7593	1618630910322701274	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/zpconv_cuda_kernel.o	c75eab78d89071cf
+80	16856	1618630919568991833	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/zpconv_cuda.o	ac0ef13def135bd9
+88	7835	1618632086326759883	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/zpconv_cuda_kernel.o	b5dbd04832452190
+88	16896	1618632095363743049	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/zpconv_cuda.o	df809270ebbe75a6
+8	7300	1618632103253035863	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/gathering_cuda_kernel.o	d145328597872940
+7	16621	1618632112557993083	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/gathering_cuda.o	66a5f27b594320b2
+4	8972	1618632121970774536	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/grouping_cuda_kernel.o	d920953c82169bed
+4	17014	1618632130018755877	/home/lxiaol9/3DGenNet2019/EPN_PointCloud/vgtk/build/temp.linux-x86_64-3.6/cuda/grouping_cuda.o	1fe1d8af4c701ec2

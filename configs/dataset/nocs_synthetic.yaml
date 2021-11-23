@@ -1,0 +1,8 @@
+# @package _global_
+name_dset: noce_synthetic
+DATASET:
+  out_points: 512
+  num_of_class: 10
+  data_path: '/groups/CESCA-CV/ICML2021/data/nocs/'
+  num_gen_samples: 30
+  workers: 8

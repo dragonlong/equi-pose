@@ -1,0 +1,54 @@
+# @package _global_
+defaults:
+  - training: complete_pcloud
+    optional: True
+  - models: epn
+    optional: True
+  - dataset: modelnet40_complete
+    optional: True
+
+seed: 2913
+exp_num: '1'
+task: 'ssl_pcloud_pose_completion' #  pcloud_pose, pcloud_completion, partial_pcloud_pose
+category: 'airplane'
+arch_type: 'ae'
+encoder_type: 'enc_so3net'
+decoder_type: 'fc'
+log_dir: '/model/${name_dset}/${exp_num}'
+
+# resources
+no_cuda: False
+gpu: '0'
+num_workers: 8
+device: ''
+
+# input, output data, general
+use_fps_points: False
+batch_size: 4
+test_batch: 4
+in_points: 1024
+out_points: 1024
+normalize_scale: False
+use_rgb: False
+
+# eval
+eval: False
+iteration: 0
+pre_compute_delta: False
+use_pretrain: False
+ckpt: ''
+save: False
+
+# visualization & logging
+is_debug: False
+vis: True
+save_frequency: 10
+save_step_frequency: 1000
+val_frequency: 10
+eval_frequency: 1000
+vis_frequency: 1000
+verbose: False
+use_wandb: False
+save_fig: False
+show_fig: False
+viz: False
