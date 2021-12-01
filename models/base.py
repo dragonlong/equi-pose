@@ -9,7 +9,7 @@ import __init__
 from global_info import global_info
 from common.train_utils import TrainClock
 from utils.extensions.chamfer_dist import ChamferDistance
-from common.quaternion import matrix_to_unit_quaternion, unit_quaternion_to_matrix
+from common.rotations import matrix_to_unit_quaternion, unit_quaternion_to_matrix
 from models.networks import PointAE
 
 
