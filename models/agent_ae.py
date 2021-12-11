@@ -264,17 +264,10 @@ class EquivariantPose(BaseAgent):
             if self.cfg.use_objective_V:
                 loss_dict['consistency'] = self.consistency_loss
         if 'completion' in self.cfg.task:
-            if self.cfg.use_objective_canon:
-                recon_multiplier = 1
-                if 'finetune' in self.cfg.task:
-                    recon_multiplier = 0
-                loss_dict['recon'] = recon_multiplier * self.recon_canon_loss
-            else:
-                loss_dict['recon'] = self.recon_loss
+            loss_dict['recon'] = self.recon_loss
             if self.cfg.use_symmetry_loss:
                 loss_dict['chirality'] = self.recon_chirality_loss
             if self.cfg.r_method_type == 1:
-                # loss_dict['regu_quat'] = 0.001 * self.regu_quat_loss
                 loss_dict['regu_quat'] = 0.1 * self.regu_quat_loss # only for MSE loss
 
         return loss_dict

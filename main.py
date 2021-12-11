@@ -166,8 +166,6 @@ def main(cfg):
                 track_dict = {'rdiff': [], 'tdiff': [], 'sdiff': [],
                               '5deg': [], '5cm': [], '5deg5cm': [], 'chamferL1': [], 'r_acc': [],
                               'class_acc': []}
-                if cfg.num_modes_R > 1:
-                    track_dict.update({'mode_accuracy': [], 'chosenR': []})
 
                 for num, test_data in enumerate(test_loader):
                     if num > 100:
@@ -188,10 +186,7 @@ def main(cfg):
                         if 'r_acc' in test_infos:
                             track_dict['r_acc'].append(test_infos['r_acc'].float().cpu().numpy().mean())
                     if 'completion' in cfg.task:
-                        if 'partial' in cfg.task and 'ssl' in cfg.task:
-                            track_dict['chamferL1'].append(tr_agent.recon_loss.cpu().numpy().mean())
-                        else:
-                            track_dict['chamferL1'].append(tr_agent.recon_canon_loss.cpu().numpy().mean())
+                        track_dict['chamferL1'].append(tr_agent.recon_loss.cpu().numpy().mean())
 
                 if cfg.use_wandb:
                     for key, value in track_dict.items():
